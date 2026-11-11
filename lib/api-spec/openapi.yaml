@@ -1,0 +1,93 @@
+openapi: 3.1.0
+info:
+  # Do not change the title, if the title changes, the import paths will be broken
+  title: Api
+  version: 0.1.0
+  description: API specification
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      description: Returns server health status
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+  /claims:
+    post:
+      operationId: createClaim
+      tags: [claims]
+      summary: Submit a claim-a-cause request
+      description: Stores a request from a visitor to claim one of the 37 causes
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ClaimInput"
+      responses:
+        "201":
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Claim"
+        "400":
+          description: Invalid input
+components:
+  schemas:
+    Claim:
+      type: object
+      required: [id, name, email, causeSlug, role, createdAt]
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        email:
+          type: string
+        causeSlug:
+          type: string
+        role:
+          type: string
+        message:
+          type: ["string", "null"]
+        createdAt:
+          type: string
+    ClaimInput:
+      type: object
+      required: [name, email, causeSlug, role]
+      properties:
+        name:
+          type: string
+          minLength: 1
+        email:
+          type: string
+          format: email
+        causeSlug:
+          type: string
+          minLength: 1
+        role:
+          type: string
+          minLength: 1
+        message:
+          type: string
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+

@@ -1,0 +1,29 @@
+{
+  "source_files_preserved": 1088,
+  "explicit_export_only_changes": [
+    "artifacts/api-server/src/app.ts",
+    "artifacts/mockup-sandbox/vite.config.ts",
+    "artifacts/the37/vite.config.ts",
+    "package.json",
+    "pnpm-lock.yaml",
+    "pnpm-workspace.yaml",
+    ".gitignore"
+  ],
+  "media_files_byte_identical": 852,
+  "media_bytes": 1987336495,
+  "media_extensions": {
+    ".jpg": 488,
+    ".svg": 1,
+    ".png": 82,
+    ".mp4": 273,
+    ".webm": 6,
+    ".jpeg": 2
+  },
+  "prerendered_routes_verified": 56,
+  "public_files_served_with_correct_length": 701,
+  "literal_asset_references_checked": 386,
+  "missing_literal_references": [],
+  "health_routes": "PASS",
+  "mp4_and_webm_range_requests": "PASS",
+  "missing_assets_and_api_404": "PASS"
+}

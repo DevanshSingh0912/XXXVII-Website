@@ -1,0 +1,68 @@
+# XXXVII — The 37
+
+> A shared architecture for humanity's exponential future: 37 causes across 10 dimensions of human existence.
+
+## What this site is
+
+XXXVII ("The 37") maps and champions 37 civilizational causes — from longevity escape velocity and morphological freedom to decentralized sensemaking and stellar engineering — organized across 10 dimensions of human existence. It is a manifesto and a map: an attempt to name the causes worth owning, building, funding, and defending in the exponential century.
+
+## Key sections
+
+- /atlas — the full gallery of all 37 causes
+- /dimensions — the 10 dimensions of human existence
+- /cause/<slug> — individual cause detail pages
+- /infos — what The 37 is and how it works
+- /contacts — claim a cause
+
+## The 10 dimensions
+
+1. **Substrate** — the biological platform: lifespan, form, senses, immunity, and origins
+2. **Engine** — the physical inputs of civilization: energy, matter, nutrition, computation
+3. **Nexus** — collective decision-making: sensemaking, economics, power, justice, distribution
+4. **Intellect** — the growth and pooling of human understanding: knowledge, cognition, networked minds
+5. **Inner World** — subjective life: meaning, growth, joy, and consciousness
+6. **Bond** — connection between people, species, and civilization's stories
+7. **Canvas** — creation: expression, beauty, and play as the generative mode of a free civilization
+8. **Habitat** — humanity's role in the living world: biosphere stewardship and regenerative design
+9. **Horizon** — expansion beyond Earth: settlement, stellar energy, fundamental physics, first contact
+10. **Continuity** — deep time: existential security, antifragility, revisability, and permanent memory
+
+## The 37 causes
+
+- /cause/longevity-escape-velocity — defeat biological aging within our lifetimes
+- /cause/morphological-freedom — the right to redesign one's own body
+- /cause/sensory-expansion — extend and augment human perception
+- /cause/total-pathogen-sovereignty — eliminate infectious disease as a civilizational threat
+- /cause/reproductive-autonomy — full sovereignty over reproductive choices
+- /cause/energy-limitlessness — abundant, clean energy for every human being
+- /cause/atomic-fabrication — molecular-scale manufacturing of any physical object
+- /cause/nutritional-superabundance — end hunger and optimize human nutrition globally
+- /cause/computational-omnipresence — universal access to computation at every scale
+- /cause/decentralized-sensemaking — replace information gatekeepers with open epistemic infrastructure
+- /cause/post-scarcity-economics — economic systems built for abundance, not scarcity
+- /cause/tyranny-resistant-architecture — systems and technologies that structurally resist authoritarianism
+- /cause/algorithmic-justice — fair, transparent, and accountable automated decision-making
+- /cause/distributive-design — design that actively distributes its benefits
+- /cause/universal-cognitive-mastery — every human reaching their full intellectual potential
+- /cause/infinite-knowledge-creation — open, permanent, and compounding human knowledge
+- /cause/collective-superintelligence — networked human minds exceeding individual intelligence
+- /cause/architected-eudaimonia — engineering the conditions for genuine flourishing
+- /cause/vertical-development — adult psychological development as a civilizational priority
+- /cause/the-psychedelic-commons — responsible access to consciousness-expanding compounds
+- /cause/radical-belonging — eliminating loneliness and building deep community
+- /cause/pan-sentient-ethics — moral consideration extended to all sentient life
+- /cause/the-new-mythos — new stories and myths adequate to the exponential future
+- /cause/infinite-creative-expression — tools and freedom for universal creative participation
+- /cause/civilizational-aesthetics — beauty as an engineering constraint, not a luxury
+- /cause/the-play-ethic — play as the generative mode of a flourishing civilization
+- /cause/regenerative-terraforming — actively healing and restoring Earth's biosphere
+- /cause/synthetic-ecology — designing new life forms to serve the living world
+- /cause/urban-symbiosis — cities that give back more than they take
+- /cause/multi-planetary-presence — permanent human settlement beyond Earth
+- /cause/stellar-engineering — harnessing the full energy output of stars
+- /cause/mastery-of-fundamental-physics — completing humanity's understanding of physical reality
+- /cause/first-contact-readiness — preparing for encounter with non-human intelligence
+- /cause/existential-security — making human extinction vanishingly unlikely
+- /cause/antifragile-civilization — civilization that grows stronger from every shock
+- /cause/permanent-revisability — keeping all futures open and all decisions reversible
+- /cause/the-long-archive — preserving human knowledge and experience across deep time

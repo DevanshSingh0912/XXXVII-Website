@@ -1,0 +1,440 @@
+kind = "web"
+previewPath = "/"
+title = "XXXVII — The 37"
+description = "A dark, cinematic, minimalist portfolio-style website for XXXVII ('The 37') — a browsable atlas of 37 causes across 10 dimensions of human existence, featuring a scroll-driven expanding image gallery, cause detail pages, dimension chapter panels, an infos page, and a contact/claim-a-cause form."
+version = "1.0.0"
+id = "artifacts/the37"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24835
+
+[services.development]
+run = "pnpm --filter @workspace/the37 run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/the37", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/the37/dist/public"
+
+# Prerendered section routes — must come before the SPA catch-all so the
+# static file server reaches the fully-populated index.html for each route.
+[[services.production.rewrites]]
+from = "/atlas"
+to = "/atlas/index.html"
+
+[[services.production.rewrites]]
+from = "/atlas/"
+to = "/atlas/index.html"
+
+[[services.production.rewrites]]
+from = "/atlas/substrate"
+to = "/atlas/substrate/index.html"
+
+[[services.production.rewrites]]
+from = "/atlas/substrate/"
+to = "/atlas/substrate/index.html"
+
+[[services.production.rewrites]]
+from = "/atlas/engine"
+to = "/atlas/engine/index.html"
+
+[[services.production.rewrites]]
+from = "/atlas/engine/"
+to = "/atlas/engine/index.html"
+
+[[services.production.rewrites]]
+from = "/atlas/nexus"
+to = "/atlas/nexus/index.html"
+
+[[services.production.rewrites]]
+from = "/atlas/nexus/"
+to = "/atlas/nexus/index.html"
+
+[[services.production.rewrites]]
+from = "/atlas/intellect"
+to = "/atlas/intellect/index.html"
+
+[[services.production.rewrites]]
+from = "/atlas/intellect/"
+to = "/atlas/intellect/index.html"
+
+[[services.production.rewrites]]
+from = "/atlas/inner-world"
+to = "/atlas/inner-world/index.html"
+
+[[services.production.rewrites]]
+from = "/atlas/inner-world/"
+to = "/atlas/inner-world/index.html"
+
+[[services.production.rewrites]]
+from = "/atlas/bond"
+to = "/atlas/bond/index.html"
+
+[[services.production.rewrites]]
+from = "/atlas/bond/"
+to = "/atlas/bond/index.html"
+
+[[services.production.rewrites]]
+from = "/atlas/canvas"
+to = "/atlas/canvas/index.html"
+
+[[services.production.rewrites]]
+from = "/atlas/canvas/"
+to = "/atlas/canvas/index.html"
+
+[[services.production.rewrites]]
+from = "/atlas/habitat"
+to = "/atlas/habitat/index.html"
+
+[[services.production.rewrites]]
+from = "/atlas/habitat/"
+to = "/atlas/habitat/index.html"
+
+[[services.production.rewrites]]
+from = "/atlas/horizon"
+to = "/atlas/horizon/index.html"
+
+[[services.production.rewrites]]
+from = "/atlas/horizon/"
+to = "/atlas/horizon/index.html"
+
+[[services.production.rewrites]]
+from = "/atlas/continuity"
+to = "/atlas/continuity/index.html"
+
+[[services.production.rewrites]]
+from = "/atlas/continuity/"
+to = "/atlas/continuity/index.html"
+
+[[services.production.rewrites]]
+from = "/dimensions"
+to = "/dimensions/index.html"
+
+[[services.production.rewrites]]
+from = "/dimensions/"
+to = "/dimensions/index.html"
+
+[[services.production.rewrites]]
+from = "/infos"
+to = "/infos/index.html"
+
+[[services.production.rewrites]]
+from = "/infos/"
+to = "/infos/index.html"
+
+[[services.production.rewrites]]
+from = "/contacts"
+to = "/contacts/index.html"
+
+[[services.production.rewrites]]
+from = "/contacts/"
+to = "/contacts/index.html"
+
+# Cause pages — all 37 slugs
+[[services.production.rewrites]]
+from = "/cause/longevity-escape-velocity"
+to = "/cause/longevity-escape-velocity/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/longevity-escape-velocity/"
+to = "/cause/longevity-escape-velocity/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/morphological-freedom"
+to = "/cause/morphological-freedom/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/morphological-freedom/"
+to = "/cause/morphological-freedom/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/sensory-expansion"
+to = "/cause/sensory-expansion/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/sensory-expansion/"
+to = "/cause/sensory-expansion/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/total-pathogen-sovereignty"
+to = "/cause/total-pathogen-sovereignty/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/total-pathogen-sovereignty/"
+to = "/cause/total-pathogen-sovereignty/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/reproductive-autonomy"
+to = "/cause/reproductive-autonomy/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/reproductive-autonomy/"
+to = "/cause/reproductive-autonomy/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/energy-limitlessness"
+to = "/cause/energy-limitlessness/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/energy-limitlessness/"
+to = "/cause/energy-limitlessness/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/atomic-fabrication"
+to = "/cause/atomic-fabrication/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/atomic-fabrication/"
+to = "/cause/atomic-fabrication/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/nutritional-superabundance"
+to = "/cause/nutritional-superabundance/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/nutritional-superabundance/"
+to = "/cause/nutritional-superabundance/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/computational-omnipresence"
+to = "/cause/computational-omnipresence/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/computational-omnipresence/"
+to = "/cause/computational-omnipresence/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/decentralized-sensemaking"
+to = "/cause/decentralized-sensemaking/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/decentralized-sensemaking/"
+to = "/cause/decentralized-sensemaking/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/post-scarcity-economics"
+to = "/cause/post-scarcity-economics/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/post-scarcity-economics/"
+to = "/cause/post-scarcity-economics/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/tyranny-resistant-architecture"
+to = "/cause/tyranny-resistant-architecture/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/tyranny-resistant-architecture/"
+to = "/cause/tyranny-resistant-architecture/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/algorithmic-justice"
+to = "/cause/algorithmic-justice/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/algorithmic-justice/"
+to = "/cause/algorithmic-justice/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/distributive-design"
+to = "/cause/distributive-design/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/distributive-design/"
+to = "/cause/distributive-design/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/universal-cognitive-mastery"
+to = "/cause/universal-cognitive-mastery/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/universal-cognitive-mastery/"
+to = "/cause/universal-cognitive-mastery/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/infinite-knowledge-creation"
+to = "/cause/infinite-knowledge-creation/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/infinite-knowledge-creation/"
+to = "/cause/infinite-knowledge-creation/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/collective-superintelligence"
+to = "/cause/collective-superintelligence/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/collective-superintelligence/"
+to = "/cause/collective-superintelligence/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/architected-eudaimonia"
+to = "/cause/architected-eudaimonia/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/architected-eudaimonia/"
+to = "/cause/architected-eudaimonia/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/vertical-development"
+to = "/cause/vertical-development/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/vertical-development/"
+to = "/cause/vertical-development/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/the-psychedelic-commons"
+to = "/cause/the-psychedelic-commons/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/the-psychedelic-commons/"
+to = "/cause/the-psychedelic-commons/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/radical-belonging"
+to = "/cause/radical-belonging/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/radical-belonging/"
+to = "/cause/radical-belonging/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/pan-sentient-ethics"
+to = "/cause/pan-sentient-ethics/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/pan-sentient-ethics/"
+to = "/cause/pan-sentient-ethics/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/the-new-mythos"
+to = "/cause/the-new-mythos/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/the-new-mythos/"
+to = "/cause/the-new-mythos/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/infinite-creative-expression"
+to = "/cause/infinite-creative-expression/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/infinite-creative-expression/"
+to = "/cause/infinite-creative-expression/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/civilizational-aesthetics"
+to = "/cause/civilizational-aesthetics/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/civilizational-aesthetics/"
+to = "/cause/civilizational-aesthetics/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/the-play-ethic"
+to = "/cause/the-play-ethic/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/the-play-ethic/"
+to = "/cause/the-play-ethic/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/regenerative-terraforming"
+to = "/cause/regenerative-terraforming/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/regenerative-terraforming/"
+to = "/cause/regenerative-terraforming/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/synthetic-ecology"
+to = "/cause/synthetic-ecology/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/synthetic-ecology/"
+to = "/cause/synthetic-ecology/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/urban-symbiosis"
+to = "/cause/urban-symbiosis/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/urban-symbiosis/"
+to = "/cause/urban-symbiosis/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/multi-planetary-presence"
+to = "/cause/multi-planetary-presence/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/multi-planetary-presence/"
+to = "/cause/multi-planetary-presence/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/stellar-engineering"
+to = "/cause/stellar-engineering/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/stellar-engineering/"
+to = "/cause/stellar-engineering/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/mastery-of-fundamental-physics"
+to = "/cause/mastery-of-fundamental-physics/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/mastery-of-fundamental-physics/"
+to = "/cause/mastery-of-fundamental-physics/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/first-contact-readiness"
+to = "/cause/first-contact-readiness/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/first-contact-readiness/"
+to = "/cause/first-contact-readiness/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/existential-security"
+to = "/cause/existential-security/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/existential-security/"
+to = "/cause/existential-security/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/antifragile-civilization"
+to = "/cause/antifragile-civilization/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/antifragile-civilization/"
+to = "/cause/antifragile-civilization/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/permanent-revisability"
+to = "/cause/permanent-revisability/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/permanent-revisability/"
+to = "/cause/permanent-revisability/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/the-long-archive"
+to = "/cause/the-long-archive/index.html"
+
+[[services.production.rewrites]]
+from = "/cause/the-long-archive/"
+to = "/cause/the-long-archive/index.html"
+
+# SPA catch-all — unknown routes fall back to the SPA shell.
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24835"
+BASE_PATH = "/"

@@ -1,0 +1,11 @@
+attached_assets/the_xxxvii_clips_1786370506897.zip filter=lfs diff=lfs merge=lfs -text
+artifacts/the37/public/videos/scenes/computational-omnipresence/why-it-matters.mp4 filter=lfs diff=lfs merge=lfs -text
+artifacts/the37/public/videos/scenes/post-scarcity-economics/why-it-matters.mp4 filter=lfs diff=lfs merge=lfs -text
+artifacts/the37/public/videos/scenes/the-long-archive/why-it-matters.mp4 filter=lfs diff=lfs merge=lfs -text
+artifacts/the37/public/videos/continuity/permanent-revisability.mp4 filter=lfs diff=lfs merge=lfs -text
+attached_assets/generated_videos/dim_interlude_continuity.mp4 filter=lfs diff=lfs merge=lfs -text
+attached_assets/generated_videos/dim_interlude_engine.mp4 filter=lfs diff=lfs merge=lfs -text
+attached_assets/generated_videos/interlude_first-contact-readiness.mp4 filter=lfs diff=lfs merge=lfs -text
+attached_assets/generated_videos/interlude_nutritional-superabundance.mp4 filter=lfs diff=lfs merge=lfs -text
+attached_assets/generated_videos/interlude_the-long-archive.mp4 filter=lfs diff=lfs merge=lfs -text
+attached_assets/generated_videos/interlude_universal-cognitive-mastery.mp4 filter=lfs diff=lfs merge=lfs -text

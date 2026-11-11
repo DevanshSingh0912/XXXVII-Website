@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-label="Portrait forthcoming">
+  <defs>
+    <radialGradient id="bg" cx="38%" cy="30%" r="90%">
+      <stop offset="0%" stop-color="#1b1d23"/>
+      <stop offset="55%" stop-color="#121317"/>
+      <stop offset="100%" stop-color="#0a0b0d"/>
+    </radialGradient>
+    <linearGradient id="fig" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#101116"/>
+      <stop offset="100%" stop-color="#0b0c0f"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="600" fill="url(#bg)"/>
+  <!-- soft key-light haze, upper left -->
+  <ellipse cx="140" cy="120" rx="220" ry="180" fill="#ffffff" opacity="0.035"/>
+  <!-- waist-up figure: head, standing collar, asymmetric draped mantle -->
+  <g stroke="#EAE6DA" stroke-width="1.5" stroke-opacity="0.55" fill="url(#fig)">
+    <!-- head, three-quarter turn -->
+    <path d="M 214 118
+             C 214 88 194 68 168 68
+             C 142 68 124 90 124 120
+             C 124 142 132 160 146 170
+             C 148 182 146 192 140 200
+             L 196 200
+             C 190 190 188 180 190 168
+             C 205 158 214 140 214 118 Z"/>
+    <!-- standing collar + shoulders + asymmetric drape to waist -->
+    <path d="M 60 600
+             L 62 420
+             C 64 340 96 292 128 272
+             C 138 262 138 226 140 210
+             L 196 210
+             C 198 224 200 256 212 268
+             C 258 284 300 330 310 410
+             L 318 600 Z"/>
+    <!-- collar line -->
+    <path d="M 140 212 C 156 232 184 232 198 214" fill="none" stroke-opacity="0.4"/>
+    <!-- asymmetric fold across the chest -->
+    <path d="M 128 274 C 190 320 232 380 246 470" fill="none" stroke-opacity="0.3"/>
+    <path d="M 210 268 C 186 330 176 420 178 520" fill="none" stroke-opacity="0.22"/>
+  </g>
+</svg>
